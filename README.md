@@ -1,6 +1,10 @@
-# Manual de Usuario - VORTEX
+# Manual de Usuario - VORTEX / VORTEX User Manual
 
-Manual de usuario del sistema **VORTEX**, gestión de taller de bombas de agua.
+Manual de usuario **bilingüe** del sistema **VORTEX**, gestión de taller de bombas de agua.
+Un solo documento con la versión en español y, a continuación, la misma versión en inglés.
+
+*Bilingual user manual for the **VORTEX** water pump workshop management system.
+A single document containing the Spanish version followed by the same content in English.*
 
 | Archivo | Contenido |
 |---|---|
@@ -10,16 +14,49 @@ Manual de usuario del sistema **VORTEX**, gestión de taller de bombas de agua.
 
 ## Contenido del manual
 
-1. Introducción — propósito del sistema y perfiles de usuario
-2. Módulo Cliente: Solicitar servicio
-3. Módulo Administrador — Inicio, Clientes y solicitudes, Inventario, Reportes
-4. Flujo de trabajo completo
-5. Glosario
+El documento contiene las dos versiones, en este orden:
 
-Portada sin numerar, encabezado en todas las páginas, pie con `Página X de Y` e índice automático.
+```
+Portada
+├── Contenido            (índice de la versión en español)
+├── VERSIÓN EN ESPAÑOL
+│    1. Introducción — propósito del sistema y perfiles de usuario
+│    2. Módulo Cliente: Solicitar servicio
+│    3. Módulo Administrador — Inicio, Clientes y solicitudes, Inventario, Reportes
+│    4. Flujo de trabajo completo
+│    5. Glosario
+├── Portadilla en inglés
+├── Contents             (índice de la versión en inglés)
+└── ENGLISH VERSION
+     1. Introduction — purpose of the system and user profiles
+     2. Client Module: Request a service
+     3. Administrator Module — Home, Clients and requests, Inventory, Reports
+     4. Complete workflow
+     5. Glossary
+```
 
-> Al abrir el documento, Word preguntará si desea actualizar el índice. Acepte, o
-> seleccione la tabla de contenido y presione **F9** para generar los números de página.
+Ambas versiones son idénticas en estructura: 28 títulos y 26 tablas cada una, con las
+mismas cinco figuras. El contenido se define una sola vez en `generar_manual.py`, con
+cada cadena como par `(español, inglés)`, de modo que las dos versiones no pueden
+desincronizarse.
+
+En la versión en inglés los nombres de botones y campos **se conservan en español**,
+tal como aparecen en pantalla, con la traducción entre paréntesis —
+por ejemplo *the Enviar solicitud (Submit request) button*.
+
+## Formato
+
+- Portada sin numerar; numeración corrida en todo el contenido
+- Pie de página bilingüe: `Página X de Y · Page X of Y`
+- Encabezado en todas las páginas: `VORTEX | Manual de Usuario · User Manual`
+- Dos índices automáticos independientes, cada uno delimitado con un marcador
+  (`VERSION_ES` y `VERSION_EN`) para que liste únicamente su propio idioma
+
+> Al abrir el documento, Word preguntará si desea actualizar los índices. Acepte, o
+> seleccione cada tabla de contenido y presione **F9** para generar los números de página.
+>
+> *When opening the document, Word will ask to update the indexes. Accept, or select
+> each table of contents and press **F9** to build the page numbers.*
 
 ## Estado de las capturas
 
